@@ -61,7 +61,7 @@ i = 1
 all_port = ["Steam", "VK","Instagram","Facebook", "Your URL"]
 try:
     for ports in all_port:
-        print(f"{Fore.GREEN + "["}{i}]{Fore.RESET} {Fore.RED + ports + Fore.RESET}")
+        print(f"{Fore.GREEN}[" + str(i) + f"]{Fore.RESET} {Fore.RED + ports + Fore.RESET}")
         i+=1
     print("")
     b = int(input("Choise: "))
@@ -78,4 +78,3 @@ except Exception as ex:
     print(ex)
 finally:
     exit()
-
